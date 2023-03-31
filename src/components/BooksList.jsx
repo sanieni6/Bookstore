@@ -1,10 +1,10 @@
-/* eslint-disable no-unused-vars */
-import React, { useState } from 'react';
+import React from 'react';
 import Book from './Book';
 import '../styles/bookList.css';
+import Form from './Form';
 
 const BooksList = () => {
-  const [books, setBook] = useState([{
+  const books = [{
     key: 1,
     title: 'Dune',
     author: 'Frank Herbert',
@@ -18,7 +18,7 @@ const BooksList = () => {
     key: 3,
     title: 'Juventud en Extasis',
     author: 'Jorge Bucay',
-  }]);
+  }];
   return (
     <div>
       <ul className="book-list">
@@ -28,19 +28,7 @@ const BooksList = () => {
         ))}
 
       </ul>
-      <form className="form-container">
-        <input
-          className="input-text"
-          type="text"
-          placeholder="Book title..."
-        />
-        <input
-          className="input-text"
-          type="text"
-          placeholder="Author..."
-        />
-        <button type="submit" className="input-submit">Add Book</button>
-      </form>
+      <Form />
     </div>
   );
 };
