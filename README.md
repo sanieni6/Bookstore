@@ -130,7 +130,7 @@ Linkedin: [Linkedin](https://www.linkedin.com/in/luissanchezz3/)
 
 Contributions, issues, and feature requests are welcome!
 Feel free to create a issue with your comments and suggestions: <br>
-github Issues:(https://github.com/sanieni6/ToDoList/issues)
+github Issues:(https://github.com/sanieni6/Bookstore/issues)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
@@ -147,5 +147,5 @@ I would like to thank Microverse for the inspiring.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 📋License <a name="license"></a>
-This project is [MIT](LICENSE.md) licensed.
+This project is [MIT](LICENSE) licensed.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
