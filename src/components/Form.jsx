@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
-import { addBook } from '../redux/books/booksSlice';
+import { addBook, getBooks } from '../redux/books/booksSlice';
 
 const Form = () => {
   const [title, setTitle] = useState('');
@@ -23,7 +23,9 @@ const Form = () => {
         author,
         category: 'Fiction',
       };
-      dispatch(addBook(book));
+      dispatch(addBook(book)).then(() => {
+        dispatch(getBooks());
+      });
       setTitle('');
       setAuthor('');
       setMessage('');
