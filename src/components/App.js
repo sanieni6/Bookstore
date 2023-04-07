@@ -2,7 +2,7 @@ import React from 'react';
 import {
   Routes, Route,
 } from 'react-router-dom';
-import '../styles/App.css';
+import '../styles/App.scss';
 import Header from './Header';
 import BooksList from './BooksList';
 import Categories from './Categories';
