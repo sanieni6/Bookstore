@@ -1,0 +1,19 @@
+/* stylelint-disable at-rule-no-unknown */
+/* stylelint-disable csstree/validator */
+@use "./color.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto+Slab:wght@200;300;400;600&display=swap");
+
+@mixin displayed($theme: row) {
+  display: flex;
+  flex-direction: $theme;
+}
+
+.App {
+  .main-container {
+    @include displayed($theme: column);
+
+    background-color: color.$body;
+    padding: 4%;
+  }
+}

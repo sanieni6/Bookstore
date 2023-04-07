@@ -1,0 +1,31 @@
+/* stylelint-disable at-rule-no-unknown */
+/* stylelint-disable csstree/validator */
+@use "./color.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto+Slab:wght@200;300;400;600&display=swap");
+
+@mixin displayed($theme: row) {
+  display: flex;
+  flex-direction: $theme;
+}
+
+.book-container {
+  @include displayed($theme: column);
+
+  .book-list {
+    list-style: none;
+
+    @include displayed($theme: column);
+
+    gap: 0.938rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  .horizontal-divider {
+    height: 0.125rem;
+    background-color: #e8e8e8;
+    width: 100%;
+    margin: 2.5rem 0 1.813rem;
+  }
+}
